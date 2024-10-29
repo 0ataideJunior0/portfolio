@@ -9,3 +9,9 @@
   --color-textW: #FBFCF8;
   --color-whiteS: #D1D1D2;
 }
+html,
+body  {
+  @apply bg-background
+}
+
+

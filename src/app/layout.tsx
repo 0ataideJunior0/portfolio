@@ -16,6 +16,7 @@ const geistMono = localFont({
  */
 const bai_Jamjuree = Bai_Jamjuree({
   weight:["200", "300", "400", "500", "600", "700"],
+  variable: "--font-primary",
   preload: false, });
 
 export const metadata: Metadata = {
