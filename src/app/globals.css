@@ -11,7 +11,10 @@
 }
 html,
 body  {
-  @apply bg-background
+  @apply bg-background 
 }
 
-
+.nav-item{ 
+  @apply text-whiteP py-4 px-2 rounded-full text-sm font-semibold hover:text-primary  hover:font-bold transition duration-500;
+}
+ 
