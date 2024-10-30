@@ -1,12 +1,9 @@
-import { HeaderSection } from "@/sections/Header";
-
+import { HeaderNavSection } from "@/sections/HeaderNav";
 
 export default function HomePage() {
   return (
-
-      <main>
-         <HeaderSection/>
-      </main>
-      
+    <main>
+      <HeaderNavSection />
+    </main>
   );
 }

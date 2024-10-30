@@ -2,19 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-:root{
-  --color-primary: #9747FF;
+:root {
+  --color-primary: #9747ff;
   --color-background: #101926;
-  --color-whiteP: #FBFCF8;
-  --color-textW: #FBFCF8;
-  --color-whiteS: #D1D1D2;
+  --color-whiteP: #fbfcf8;
+  --color-textW: #fbfcf8;
+  --color-whiteS: #d1d1d2;
 }
 html,
-body  {
-  @apply bg-background 
+body {
+  @apply bg-background;
 }
 
-.nav-item{ 
-  @apply text-whiteP py-4 px-2 rounded-full text-sm font-semibold hover:text-primary  hover:font-bold transition duration-500;
+.nav-item {
+  @apply text-whiteP py-4 px-2
+   rounded-full md:text-base sm:text-2xl font-semibold hover:text-primary  hover:font-bold transition duration-500;
 }
- 

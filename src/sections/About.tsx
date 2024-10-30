@@ -1,5 +1,3 @@
-export const AboutSection = () =>{
-  return(
-    <div>About Section</div>
-  )
+export const AboutSection = () => {
+  return <div>About Section</div>;
 };

@@ -1,5 +1,3 @@
-export const HeroSection = () =>{
-  return(
-    <div>Hero Section</div>
-  )
+export const HeroSection = () => {
+  return <div>Hero Section</div>;
 };

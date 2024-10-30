@@ -1,5 +1,3 @@
-export const WorksSection = () =>{
-  return(
-    <div>Works Section</div>
-  )
+export const WorksSection = () => {
+  return <div>Works Section</div>;
 };
