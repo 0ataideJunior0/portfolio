@@ -15,7 +15,7 @@ export const HeaderNavSection = () => {
   console.log(isMenuOpen);
   return (
     <nav
-      className="mx-4 my-2 p-2 border border-white/20 rounded-2xl
+      className="sticky mx-4 my-2 p-2 border border-white/20 rounded-2xl
      bg-white/15 backdrop-blur-md"
     >
       <div className="flex items-center justify-between px-2 py-2 ">
@@ -63,9 +63,9 @@ export const HeaderNavSection = () => {
       </div>
       {/* mobile menu */}
       {isMenuOpen ? (
-        <ul className="flex flex-col justify-center items-center space-y-4 md:hidden">
+        <ul className="flex flex-col my-2 justify-center items-center space-y-4 md:hidden">
           <li>
-            <a href="#" className="nav-item text-2xl">
+            <a href="#" className="nav-item">
               Inicio
             </a>
           </li>
