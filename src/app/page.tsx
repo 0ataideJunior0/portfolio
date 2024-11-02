@@ -6,7 +6,6 @@ export default function HomePage() {
     <main>
       <HeaderNavSection />
       <HeroSection />
-      <HeroSection />
     </main>
   );
 }

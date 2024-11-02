@@ -18,7 +18,7 @@ export const HeaderNavSection = () => {
   return (
     <nav className="fixed  top-1 w-full z-30 ">
       <div
-        className="flex items-center justify-between mx-10 px-2 py-4
+        className="flex items-center justify-between mx-10 px-6 py-4
         my-2 p-2 border border-white/10 rounded-2xl
       backdrop-blur-md"
       >
