@@ -5,7 +5,9 @@ export const CtaButton = () => {
     <a
       className="group rounded  relative inline-block overflow-hidden border
        border-primary600
-       px-8 py-3 focus:outline-none focus:ring"
+       px-8 py-3 focus:outline-none focus:ring
+        sm:max-w-[200px]
+       sm:justify-center"
       href="#"
     >
       <span
@@ -19,7 +21,7 @@ export const CtaButton = () => {
       transition-colors duration-300 group-hover:text-whiteP"
       >
         Entre em contato
-        <span className="text-2xl">
+        <span className="text-2xl sm:hidden">
           <TbCircleArrowRight />
         </span>
       </span>
