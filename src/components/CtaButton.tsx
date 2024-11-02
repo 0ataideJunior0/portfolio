@@ -16,7 +16,7 @@ export const CtaButton = () => {
 
       <span
         className="flex gap-2 relative items-center text-md font-medium text-pribg-primary600 
-      transition-colors group-hover:text-whiteP"
+      transition-colors duration-300 group-hover:text-whiteP"
       >
         Entre em contato
         <span className="text-2xl">

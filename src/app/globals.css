@@ -16,6 +16,6 @@ body {
 }
 
 .nav-item {
-  @apply text-whiteP py-4 px-2
-   rounded-full md:text-base sm:text-2xl font-semibold hover:text-primary  hover:font-bold transition duration-500;
+  @apply text-whiteP py-2 px-2
+   rounded-full md:text-base sm:text-2xl font-semibold hover:text-primary  transition duration-500;
 }
