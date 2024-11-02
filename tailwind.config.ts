@@ -22,6 +22,7 @@ const config: Config = {
       colors:{
         text: "var(--color-textW)",
         primary: "var(--color-primary)",
+        primary600: "var(--color-primary600)",
         background: "var(--color-background)",
         whiteP: "var(--color-whiteP)",
         whiteS: "var(--color-whiteS)"

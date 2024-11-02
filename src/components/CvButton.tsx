@@ -4,7 +4,7 @@ export const CvButton = () => {
   return (
     <a
       className="group relative inline-flex items-center overflow-hidden rounded bg-primary px-8 py-3
-       text-white focus:outline-none focus:ring active:bg-indigo-500"
+       text-white focus:outline-none focus:ring active:bg-primary"
       href="#"
     >
       <span className="absolute -end-full transition-all  group-hover:end-4">
@@ -12,7 +12,7 @@ export const CvButton = () => {
       </span>
 
       <span className="text-sm font-medium transition-all group-hover:me-4">
-        Download
+        Baixe meu CV
       </span>
     </a>
 

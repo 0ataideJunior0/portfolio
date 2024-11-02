@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import grainImage from "@/assets/images/bgPattern.jpg";
 import { CtaButton } from "@/components/CtaButton";
-import profilePhoto from "../assets/images/Ellipse _perfil.png";
+import profilePhoto from "../assets/images/profile_alta.png";
 
 export const HeroSection = () => {
   return (
@@ -15,13 +15,13 @@ export const HeroSection = () => {
           backgroundImage: `url(${grainImage.src})`,
         }}
       ></div>
-      <div className="container flex flex-row ">
+      <div className="container flex items-center  flex-row gap-8">
         {/* Text and left content  */}
         <div className="flex flex-col text-whiteP gap-4">
           <span className="text-3xl">
             Me chamo <span className="text-primary ">Ataíde Junior</span>
           </span>
-          <span className="text-2xl max-w-[600px]">
+          <span className="text-2xl max-w-[540px]">
             apaixonado por criar experiências interfaces intuitivas e centradas
             no usuário. Com mais de 2 anos de experiência na indústria, tenho um
             histórico comprovado em transformar insights de usuários em soluções
@@ -29,13 +29,13 @@ export const HeroSection = () => {
           </span>
 
           {/* buttons  */}
-          <div className="flex flex-row gap-6">
-            <CvButton />
+          <div className="flex flex-row gap-8">
             <CtaButton />
+            <CvButton />
           </div>
         </div>
 
-        <div>
+        <div className="size-[400px]">
           {/* images and right contents  */}
           <Image src={profilePhoto} alt="my profile Photo" />
         </div>

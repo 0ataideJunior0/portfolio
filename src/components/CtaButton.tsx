@@ -1,17 +1,27 @@
-import { TbDownload } from "react-icons/tb";
+import { TbCircleArrowRight } from "react-icons/tb";
 
 export const CtaButton = () => {
   return (
     <a
-      className="group flex items-center justify-between gap-4 rounded-lg border border-indigo-600 bg-indigo-600 px-5 py-3 transition-colors hover:bg-transparent focus:outline-none focus:ring"
+      className="group rounded  relative inline-block overflow-hidden border
+       border-primary600
+       px-8 py-3 focus:outline-none focus:ring"
       href="#"
     >
-      <span className="font-medium text-white transition-colors group-hover:text-indigo-600 group-active:text-indigo-500">
-        Find out more
-      </span>
+      <span
+        className="absolute inset-x-0 bottom-0 h-[2px] bg-primary600 
+      transition-all group-hover:h-full
+       group-active:bg-primary"
+      ></span>
 
-      <span className="shrink-0 rounded-full border border-current bg-white p-2 text-indigo-600 group-active:text-indigo-500">
-        <TbDownload />
+      <span
+        className="flex gap-2 relative items-center text-md font-medium text-pribg-primary600 
+      transition-colors group-hover:text-whiteP"
+      >
+        Entre em contato
+        <span className="text-2xl">
+          <TbCircleArrowRight />
+        </span>
       </span>
     </a>
   );
