@@ -8,7 +8,7 @@ import profilePhoto from "../assets/images/profile_alta.png";
 
 export const HeroSection = () => {
   return (
-    <div className="h-dvh py-28 md:py-32 lg:py-48 relative z-0 flex items-start sm:flex-col">
+    <div className="h-dvh py-28 md:py-32 lg:py-64 relative z-0 flex items-start sm:flex-col">
       {/* bg image */}
       {/*       <Image
         src={bgImage}
@@ -16,7 +16,7 @@ export const HeroSection = () => {
         className="absolute inset-0 -z-30 opacity-100"
       /> */}
 
-      <div className="container flex items-center lg:flex-row  sm:flex-col gap-20 md:gap-8 sm:gap-6 ">
+      <div className="container flex items-center lg:flex-row  sm:flex-col lg:gap-40 md:gap-8 sm:gap-6 ">
         {/* Text and left content  */}
         <div className="lg:hidden md:flex md:size-[300px] sm:flex sm:size-[200px]">
           <Image src={profilePhoto} alt="my profile Photo" />
@@ -30,7 +30,7 @@ export const HeroSection = () => {
           >
             <TypeWriter />
           </span>
-          <span className="lg:text-3xl lg:max-w-[600px] md:text-2xl md:max-w-[400px]">
+          <span className="lg:text-2xl lg:max-w-[500px] md:text-2xl md:max-w-[400px]">
             Apaixonado por criar experiências interfaces intuitivas e centradas
             no usuário. Com mais de 2 anos de experiência na indústria, tenho um
             histórico comprovado em transformar insights de usuários em soluções

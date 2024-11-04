@@ -8,13 +8,13 @@ export const TypeWriter = () => {
       sequence={[
         // Same substring at the start will only be typed out once, initially
         "Olá eu Sou Ataíde Junior",
-        1000, // wait 1s before replacing "Mice" with "Hamsters"
+        2000, // wait 1s before replacing "Mice" with "Hamsters"
         "Olá eu Sou UX designer",
-        1000,
+        2000,
         "Olá eu Sou UI designer",
-        1000,
+        2000,
         "Olá eu Sou Web developer",
-        1000,
+        2000,
       ]}
       wrapper="span"
       speed={50}
