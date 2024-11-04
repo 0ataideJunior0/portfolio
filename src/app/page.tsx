@@ -1,3 +1,4 @@
+import { AboutSection } from "@/sections/About";
 import { HeaderNavSection } from "@/sections/HeaderNav";
 import { HeroSection } from "@/sections/Hero";
 
@@ -6,6 +7,7 @@ export default function HomePage() {
     <main>
       <HeaderNavSection />
       <HeroSection />
+      <AboutSection />
     </main>
   );
 }
