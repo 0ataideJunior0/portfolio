@@ -29,7 +29,7 @@ export const HeaderNavSection = () => {
           <Image src={logo} width={55} height={55} alt="minha logo" />
         </a>
         <a
-          className="hidden md:hidden hover:scale-110 transition duration-300"
+          className="sm:hidden md:hidden lg:flex hover:scale-110 transition duration-300"
           href="#"
         >
           <Image src={logoName} width={120} height={120} alt="minha logo" />

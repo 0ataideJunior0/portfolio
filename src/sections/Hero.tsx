@@ -8,7 +8,7 @@ import profilePhoto from "../assets/images/profile_alta.png";
 
 export const HeroSection = () => {
   return (
-    <div className="py-28 md:py-32 lg:py-48 relative z-0 flex items-start sm:flex-col">
+    <div className="h-dvh py-28 md:py-32 lg:py-48 relative z-0 flex items-start sm:flex-col">
       {/* bg image */}
       {/*       <Image
         src={bgImage}
