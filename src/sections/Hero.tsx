@@ -2,6 +2,7 @@ import { CvButton } from "@/components/CvButton";
 import Image from "next/image";
 
 import { CtaButton } from "@/components/CtaButton";
+import { ProfilePhoto } from "@/components/ProfilePhoto";
 import { Socials } from "@/components/Socials";
 import { TypeWriter } from "@/components/Typewriter";
 import profilePhoto from "../assets/images/profile_alta.png";
@@ -57,12 +58,15 @@ export const HeroSection = () => {
         </div>
 
         {/* images and right contents  */}
-        <div
+        <div className="md:hidden sm:hidden lg:flex lg:size-[400px]">
+          <ProfilePhoto />
+        </div>
+        {/*         <div
           className="md:hidden sm:hidden lg:flex lg:size-[400px] lg:border-4 lg:border-dashed lg:border-primary lg:rounded-full
          lg:border-spacing-2"
         >
           <Image src={profilePhoto} alt="my profile Photo" />
-        </div>
+        </div> */}
       </div>
     </div>
   );

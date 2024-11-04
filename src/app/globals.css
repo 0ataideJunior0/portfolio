@@ -19,3 +19,25 @@ body {
   @apply text-whiteP py-2 px-2
    rounded-full md:text-base sm:text-2xl font-semibold hover:text-primary  transition duration-500;
 }
+@layer utilities {
+  /* Act as a border */
+  .card-wrapper {
+    @apply relative overflow-hidden rounded-full bg-gradient-to-b from-slate-700 to-slate-800;
+  }
+
+  /* Gradient */
+  .card-wrapper::before {
+    background: conic-gradient(
+      rgba(244, 114, 182, 0.8) 0deg,
+      rgba(192, 132, 252, 0.8) 0deg,
+      transparent 80deg
+    );
+
+    @apply absolute left-[-25%] top-[-25%] h-[150%] w-[150%] animate-border-spin content-[''];
+  }
+
+  /* Body */
+  .card-content {
+    @apply absolute left-[4px] top-[4px] h-[calc(100%-8px)] w-[calc(100%-8px)] rounded-full bg-gradient-to-b from-slate-800 to-slate-900;
+  }
+}
