@@ -16,18 +16,20 @@ export const HeaderNavSection = () => {
   };
   console.log(isMenuOpen);
   return (
-    <nav className="fixed  top-1 w-full z-30 ">
+    <nav
+      className="fixed  top-1 w-full z-30 shadow-md
+      backdrop-blur-md "
+    >
       <div
-        className="flex items-center justify-between mx-10 px-2 py-4
-        my-2 p-2 border border-white/10 rounded-2xl
-      backdrop-blur-md"
+        className="flex items-center justify-between 
+        my-2 p-2 mx-4 "
       >
         {/* logos */}
         <a className=" hover:scale-110  transition duration-300" href="#">
           <Image src={logo} width={55} height={55} alt="minha logo" />
         </a>
         <a
-          className="hidden md:flex hover:scale-110 transition duration-300"
+          className="sm:hidden md:hidden lg:flex hover:scale-110 transition duration-300"
           href="#"
         >
           <Image src={logoName} width={120} height={120} alt="minha logo" />
@@ -36,12 +38,12 @@ export const HeaderNavSection = () => {
         {/* hamburguer menu */}
         <div
           onClick={togleMenu}
-          className="md:hidden text-3xl text-whiteP cursor-pointer"
+          className="lg:hidden text-3xl text-whiteP cursor-pointer"
         >
           <IoMenu />
         </div>
 
-        <ul className="hidden md:flex space-x-4">
+        <ul className="hidden md:hidden lg:flex space-x-4">
           <li>
             <a href="#" className="nav-item gap-1 flex items-center">
               Inicio
@@ -70,7 +72,7 @@ export const HeaderNavSection = () => {
       </div>
       {/* mobile menu */}
       {isMenuOpen ? (
-        <ul className="flex flex-col my-2 justify-center items-center space-y-4 md:hidden">
+        <ul className="flex flex-col my-2 justify-center items-center space-y-4 lg:hidden">
           <li>
             <a href="#" className="nav-item">
               Inicio

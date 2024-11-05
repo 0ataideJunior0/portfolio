@@ -7,9 +7,12 @@ import {
 
 export const Socials = () => {
   return (
-    <div className="flex gap-2 text-2xl my-4 text-whiteS items-center">
+    <div
+      className="lg:flex lg:flex-row md:flex md:flex-row gap-2 text-2xl my-4 text-whiteS items-center 
+    sm:flex-col sm:gap-2"
+    >
       <span>Diga um olá:</span>
-      <span className="flex flex-row gap-2 text-whiteP text-3xl">
+      <span className="flex flex-row gap-2 text-whiteP text-3xl sm:justify-center">
         <Link
           href="https://www.linkedin.com/in/ataide-jr/"
           className="hover:text-primary hover:scale-125 transition-all duration-200"

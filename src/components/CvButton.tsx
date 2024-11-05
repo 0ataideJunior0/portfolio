@@ -4,7 +4,9 @@ export const CvButton = () => {
   return (
     <a
       className="group relative inline-flex items-center overflow-hidden rounded border border-primary px-8 py-3
-       text-whiteP focus:outline-none focus:ring active:bg-primary "
+       text-whiteP focus:outline-none focus:ring active:bg-primary
+       sm:max-w-[200px]
+       sm:justify-center"
       href="CV_uiux.pdf"
       target="_blank"
     >
