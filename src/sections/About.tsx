@@ -1,5 +1,6 @@
 "use client";
 import figma from "@/assets/icons/figma.svg";
+import framerMotion from "@/assets/icons/framer-motion.svg";
 import framer from "@/assets/icons/framer.svg";
 import javascript from "@/assets/icons/javascript.svg";
 import miro from "@/assets/icons/miro.svg";
@@ -20,6 +21,11 @@ export const AboutSection = () => {
       title: "Framer",
       img: framer,
       desc: "Site nocode",
+    },
+    {
+      title: "FramerMotion ",
+      img: framerMotion,
+      desc: "React Animations",
     },
     {
       title: "Miro",
@@ -49,7 +55,7 @@ export const AboutSection = () => {
   ];
   return (
     <div className="container ">
-      <span className="flex text-2xl justify-center mb-4 text-whiteP ">
+      <span className="flex text-2xl justify-center mb-4 py-6 text-whiteP ">
         Conheça algumas ferramentas que eu domino!!!
       </span>
       <section className="grid gap-4 grid-cols-[repeat(auto-fill,_minmax(250px,1fr))]">
@@ -57,7 +63,7 @@ export const AboutSection = () => {
           <div
             key={index}
             className="flex  border-2 rounded-md gap-2 py-1 px-1 items-center
-             md:saturate-0 hover:saturate-100 hover:border-2 hover:border-primary"
+              hover:border-2 hover:border-primary"
           >
             <span className=" flex bg-slate-800 h-[64px] w-[64px] justify-center items-center rounded-md">
               <Image src={item.img} alt={item.title} width={50} height={50} />

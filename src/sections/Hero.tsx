@@ -25,10 +25,11 @@ export const HeroSection = () => {
         <div className="flex flex-col text-whiteP gap-4">
           <span
             className="
-            lg:flex lg:justify-start lg:text-3xl
+            lg:flex lg:justify-start lg:text-4xl lg:ml-1
             md:flex md:text-2xl md:justify-center
             sm:flex sm:text-xl sm:justify-center"
           >
+            <span className="mr-2">Olá eu sou</span>
             <TypeWriter />
           </span>
           <span className="lg:text-2xl lg:max-w-[500px] md:text-2xl md:max-w-[400px]">
