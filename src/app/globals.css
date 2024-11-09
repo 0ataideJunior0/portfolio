@@ -12,7 +12,9 @@
 }
 html,
 body {
-  @apply bg-background;
+  @apply bg-gradient-to-t from-gray-800 to-zinc-800;
+  scroll-behavior: smooth;
+  scrollbar-color: var(--color-primary);
 }
 
 .nav-item {
@@ -39,5 +41,10 @@ body {
   /* Body */
   .card-content {
     @apply absolute left-[4px] top-[4px] h-[calc(100%-8px)] w-[calc(100%-8px)] rounded-full bg-gradient-to-b from-slate-800 to-slate-900;
+  }
+}
+@layer base {
+  :root {
+    --radius: 0.5rem;
   }
 }

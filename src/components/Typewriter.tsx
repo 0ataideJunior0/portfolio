@@ -7,13 +7,13 @@ export const TypeWriter = () => {
       className="text-primary"
       sequence={[
         // Same substring at the start will only be typed out once, initially
-        "Olá eu Sou Ataíde Junior",
+        " Ataíde Junior",
         2000, // wait 1s before replacing "Mice" with "Hamsters"
-        "Olá eu Sou UX designer",
+        " UX designer",
         2000,
-        "Olá eu Sou UI designer",
+        " UI designer",
         2000,
-        "Olá eu Sou Web developer",
+        " Web developer",
         2000,
       ]}
       wrapper="span"
