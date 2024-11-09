@@ -59,8 +59,27 @@ export const WorksSection = () => {
     },
   ];
 
+  /*   const skills = [{
+    ux: {
+      title: "UX Designer",
+      icon: <IoFingerPrint />,
+    },
+    ui: {
+      title: "UI Designer",
+      icon: <IoPlanetOutline />,
+    },
+    Smid: {
+      title: "Social Midia",
+      icon: <IoBulbOutline />,
+    },
+    Wdes: {
+      title: "Web Designer",
+      icon: <IoCodeSlash />,
+    },
+  }] */
+
   return (
-    <div className="container">
+    <div className="container" id="works">
       {/* Header */}
       <div className="flex flex-col items-center py-10 my-8">
         <span className="text-4xl text-whiteP ">Meus trabalhos</span>
@@ -76,21 +95,22 @@ export const WorksSection = () => {
         {CardWorks.map((item, index) => (
           <div
             key={index}
-            className="flex flex-col items-center border
+            className="flex flex-col items-center border  
          border-gray-200 rounded-3xl shadow-2xl lg:flex-row md:max-w-xl lg:max-w-4xl bg-slate-800
+         lg:px-5
           overflow-hidden sticky top-20"
           >
             <div className="h-full">
               <Image src={item.img} alt="imagem" className="rounded-md" />
             </div>
-            <div className="flex flex-col gap-2 mx-4 justify-between">
-              <div className="lg:text-6xl md:text-4xl text-whiteP">
+            <div className="flex flex-col gap-4 mx-4 justify-between py-4">
+              <div className="lg:text-5xl md:text-4xl sm:text-3xl text-whiteP flex justify-center">
                 {item.title}
               </div>
-              <div className="lg:text-xl text-whiteS lg:min-w-[400px] md:min-w-[300px]">
+              <div className="lg:text-xl text-whiteS lg:min-w-[400px] md:min-w-[300px] lg:min-h-[200px]">
                 {item.desc}
               </div>
-              <span className="text-2xl text-whiteP">
+              <span className="text-2xl text-whiteP flex justify-center">
                 Minhas funções no projeto:
               </span>
               <div className="flex gap-2 justify-evenly mt-3">
@@ -107,7 +127,9 @@ export const WorksSection = () => {
                   {item.skills?.Smid.title}
                 </div>
               </div>
-              <CtaButton>Veja com mais detalhes</CtaButton>
+              <div className="flex w-full justify-center mt-4">
+                <CtaButton>Veja com mais detalhes</CtaButton>
+              </div>
             </div>
           </div>
         ))}

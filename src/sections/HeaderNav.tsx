@@ -25,12 +25,12 @@ export const HeaderNavSection = () => {
         my-2 p-2 mx-4 "
       >
         {/* logos */}
-        <a className=" hover:scale-110  transition duration-300" href="#">
+        <a className=" hover:scale-110  transition duration-300" href="#hero">
           <Image src={logo} width={55} height={55} alt="minha logo" />
         </a>
         <a
           className="sm:hidden md:hidden lg:flex hover:scale-110 transition duration-300"
-          href="#"
+          href="#hero"
         >
           <Image src={logoName} width={120} height={120} alt="minha logo" />
         </a>
@@ -45,25 +45,25 @@ export const HeaderNavSection = () => {
 
         <ul className="hidden md:hidden lg:flex space-x-4">
           <li>
-            <a href="#" className="nav-item gap-1 flex items-center">
+            <a href="#hero" className="nav-item gap-1 flex items-center">
               Inicio
               <TbHome />
             </a>
           </li>
           <li>
-            <a href="#" className="nav-item gap-1 flex items-center">
+            <a href="#about" className="nav-item gap-1 flex items-center">
               Sobre
               <RxPerson />
             </a>
           </li>
           <li>
-            <a href="#" className="nav-item gap-1 flex items-center">
+            <a href="#works" className="nav-item gap-1 flex items-center">
               Trabalhos
               <TbScreenShare />
             </a>
           </li>
           <li>
-            <a href="#" className="nav-item gap-1 flex items-center">
+            <a href="#contact" className="nav-item gap-1 flex items-center">
               Contato
               <RxPaperPlane />
             </a>
@@ -74,22 +74,22 @@ export const HeaderNavSection = () => {
       {isMenuOpen ? (
         <ul className="flex flex-col my-2 justify-center items-center space-y-4 lg:hidden">
           <li>
-            <a href="#" className="nav-item">
+            <a href="#hero" className="nav-item">
               Inicio
             </a>
           </li>
           <li>
-            <a href="#" className="nav-item">
+            <a href="#about" className="nav-item">
               Sobre
             </a>
           </li>
           <li>
-            <a href="#" className="nav-item">
+            <a href="#works" className="nav-item">
               Trabalhos
             </a>
           </li>
           <li>
-            <a href="#" className="nav-item">
+            <a href="#contact" className="nav-item">
               Contato
             </a>
           </li>

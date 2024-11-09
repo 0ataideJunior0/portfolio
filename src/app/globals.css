@@ -13,6 +13,8 @@
 html,
 body {
   @apply bg-gradient-to-t from-gray-800 to-zinc-800;
+  scroll-behavior: smooth;
+  scrollbar-color: var(--color-primary);
 }
 
 .nav-item {

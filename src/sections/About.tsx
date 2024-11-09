@@ -54,11 +54,14 @@ export const AboutSection = () => {
     },
   ];
   return (
-    <div className="container ">
+    <div className="container py-20" id="about">
       <span className="flex text-2xl justify-center mb-4 py-6 text-whiteP ">
         Conheça algumas ferramentas que eu domino!!!
       </span>
-      <section className="grid gap-4 grid-cols-[repeat(auto-fill,_minmax(250px,1fr))]">
+      <section
+        className="grid gap-4 sm:grid-cols-[repeat(auto-fill,_minmax(250px,1fr))] 
+      lg:grid-cols-[repeat(auto-fill,_minmax(400px,1fr))]"
+      >
         {CardList.map((item, index) => (
           <div
             key={index}
