@@ -3,15 +3,16 @@ import { TbCircleArrowRight } from "react-icons/tb";
 
 interface Props {
   children?: ReactNode;
+  href?: string;
 }
 
-export const CtaButton = ({ children }: Props) => {
+export const CtaButton = ({ children, href }: Props) => {
   return (
     <a
-      className="group rounded-xl  relative inline-block overflow-hidden border
+      className="group rounded-xl relative inline-block overflow-hidden border
        border-primary600
        px-8 py-3 focus:outline-none focus:ring"
-      href="#"
+      href={href}
     >
       <span
         className="absolute inset-x-0 bottom-0 h-[2px] bg-primary600 
