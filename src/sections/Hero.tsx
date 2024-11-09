@@ -5,11 +5,13 @@ import { CtaButton } from "@/components/CtaButton";
 import { ProfilePhoto } from "@/components/ProfilePhoto";
 import { Socials } from "@/components/Socials";
 import { TypeWriter } from "@/components/Typewriter";
+import Meteors from "@/components/ui/meteors";
 import profilePhoto from "../assets/images/profile_alta.png";
 
 export const HeroSection = () => {
   return (
     <div className="h-dvh py-28 md:py-32 lg:py-64 relative z-0 flex items-start sm:flex-col">
+      <Meteors number={30} />
       {/* bg image */}
       {/*       <Image
         src={bgImage}
@@ -19,7 +21,7 @@ export const HeroSection = () => {
 
       <div className="container flex items-center lg:flex-row  sm:flex-col lg:gap-40 md:gap-8 sm:gap-6 ">
         {/* Text and left content  */}
-        <div className="lg:hidden md:flex md:size-[300px] sm:flex sm:size-[200px]">
+        <div className="lg:hidden md:flex md:size-[300px] sm:flex sm:size-[200px] z-20">
           <Image src={profilePhoto} alt="my profile Photo" />
         </div>
         <div className="flex flex-col text-whiteP gap-4">
@@ -53,21 +55,16 @@ export const HeroSection = () => {
           md:flex md:flex-row md:gap-6 md:justify-center
           sm:flex sm:flex-col sm:items-center sm:justify-center sm:gap-4"
           >
-            <CtaButton />
+            <CtaButton>Entre em contato</CtaButton>
             <CvButton />
           </div>
         </div>
 
         {/* images and right contents  */}
+
         <div className="md:hidden sm:hidden lg:flex lg:size-[400px]">
           <ProfilePhoto />
         </div>
-        {/*         <div
-          className="md:hidden sm:hidden lg:flex lg:size-[400px] lg:border-4 lg:border-dashed lg:border-primary lg:rounded-full
-         lg:border-spacing-2"
-        >
-          <Image src={profilePhoto} alt="my profile Photo" />
-        </div> */}
       </div>
     </div>
   );

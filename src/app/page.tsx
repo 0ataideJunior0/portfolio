@@ -8,8 +8,8 @@ export default function HomePage() {
     <main>
       <HeaderNavSection />
       <HeroSection />
-      <AboutSection />
       <WorksSection />
+      <AboutSection />
     </main>
   );
 }
