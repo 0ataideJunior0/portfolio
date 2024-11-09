@@ -3,7 +3,7 @@ import { TbDownload } from "react-icons/tb";
 export const CvButton = () => {
   return (
     <a
-      className="group relative inline-flex items-center overflow-hidden rounded border border-primary px-8 py-3
+      className="group relative inline-flex items-center overflow-hidden rounded-xl border border-primary px-8 py-3
        text-primary focus:outline-none focus:ring active:bg-primary
        sm:max-w-[200px]
        sm:justify-center"

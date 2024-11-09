@@ -1,13 +1,16 @@
+import { ReactNode } from "react";
 import { TbCircleArrowRight } from "react-icons/tb";
 
-export const CtaButton = () => {
+interface Props {
+  children?: ReactNode;
+}
+
+export const CtaButton = ({ children }: Props) => {
   return (
     <a
-      className="group rounded  relative inline-block overflow-hidden border
+      className="group rounded-xl  relative inline-block overflow-hidden border
        border-primary600
-       px-8 py-3 focus:outline-none focus:ring
-        sm:max-w-[200px]
-       sm:justify-center"
+       px-8 py-3 focus:outline-none focus:ring"
       href="#"
     >
       <span
@@ -17,11 +20,11 @@ export const CtaButton = () => {
       ></span>
 
       <span
-        className="flex gap-2 relative items-center text-md font-medium text-primary600 
+        className="flex gap-2 relative items-center justify-center text-md font-medium text-primary600 
       transition-colors duration-300 group-hover:text-whiteP"
       >
-        Entre em contato
-        <span className="text-2xl sm:hidden">
+        {children}
+        <span className="text-2xl sm:hidden lg:flex">
           <TbCircleArrowRight />
         </span>
       </span>
