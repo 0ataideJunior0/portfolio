@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Bai_Jamjuree } from "next/font/google";
 import "./globals.css";
 
-
 /* const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -15,9 +14,10 @@ const geistMono = localFont({
 });
  */
 const bai_Jamjuree = Bai_Jamjuree({
-  weight:["200", "300", "400", "500", "600", "700"],
+  weight: ["200", "300", "400", "500", "600", "700"],
   variable: "--font-primary",
-  preload: false, });
+  preload: false,
+});
 
 export const metadata: Metadata = {
   title: "Ataide Jr Portfolio",
@@ -31,11 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-Br" className={bai_Jamjuree.className}>
-      <body
-        className={`${bai_Jamjuree} antialiased`}
-      >
-        {children}
-      </body>
+      <body className={`${bai_Jamjuree} antialiased`}>{children}</body>
     </html>
   );
 }
