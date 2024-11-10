@@ -6,6 +6,7 @@ import { ProfilePhoto } from "@/components/ProfilePhoto";
 import { Socials } from "@/components/Socials";
 import { TypeWriter } from "@/components/Typewriter";
 import Meteors from "@/components/ui/meteors";
+import Particles from "@/components/ui/particles";
 import profilePhoto from "../assets/images/profile_alta.png";
 
 export const HeroSection = () => {
@@ -22,9 +23,18 @@ export const HeroSection = () => {
       /> */}
 
       <div className="container flex items-center lg:flex-row  sm:flex-col lg:gap-40 md:gap-8 sm:gap-6 ">
-        <Meteors number={30} />
+        {/* <Meteors number={30} /> */}
+        <Particles
+          className="absolute inset-0 "
+          quantity={200}
+          ease={100}
+          size={1}
+          refresh
+        />
+
+        <Meteors />
         {/* Text and left content  */}
-        <div className="lg:hidden md:flex md:size-[300px] sm:flex sm:size-[200px] z-20">
+        <div className="lg:hidden md:flex md:size-[300px] sm:flex sm:size-[200px] z-30">
           <Image src={profilePhoto} alt="my profile Photo" />
         </div>
         <div className="flex flex-col text-whiteP gap-4">
