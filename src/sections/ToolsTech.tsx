@@ -10,7 +10,7 @@ import typescrip from "@/assets/icons/typescript.svg";
 
 import Image from "next/image";
 
-export const AboutSection = () => {
+export const ToolsTechSection = () => {
   const CardList = [
     {
       title: "Figma",

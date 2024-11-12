@@ -1,9 +1,9 @@
-import { AboutSection } from "@/sections/About";
 import { ContactSection } from "@/sections/Contact";
 import { FooterSection } from "@/sections/Footer";
 import { HeaderNavSection } from "@/sections/HeaderNav";
 import { HeroSection } from "@/sections/Hero";
-import { TestimonialSection } from "@/sections/Testimonials";
+import { MarqueeSkillsSection } from "@/sections/MarqueeSkills";
+import { ToolsTechSection } from "@/sections/ToolsTech";
 import { WorksSection } from "@/sections/Works";
 
 export default function HomePage() {
@@ -12,8 +12,8 @@ export default function HomePage() {
       <HeaderNavSection />
       <HeroSection />
       <WorksSection />
-      <TestimonialSection />
-      <AboutSection />
+      <MarqueeSkillsSection />
+      <ToolsTechSection />
       <ContactSection />
       <FooterSection />
     </main>

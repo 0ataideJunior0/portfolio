@@ -1,8 +1,9 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
+import { GrTechnology } from "react-icons/gr";
 import { IoMenu } from "react-icons/io5";
-import { RxPaperPlane, RxPerson } from "react-icons/rx";
+import { RxPaperPlane } from "react-icons/rx";
 import { TbHome, TbScreenShare } from "react-icons/tb";
 
 import logo from "../assets/images/logo.png";
@@ -52,8 +53,8 @@ export const HeaderNavSection = () => {
           </li>
           <li>
             <a href="#about" className="nav-item gap-1 flex items-center">
-              Sobre
-              <RxPerson />
+              Habilidades
+              <GrTechnology />
             </a>
           </li>
           <li>
@@ -80,7 +81,7 @@ export const HeaderNavSection = () => {
           </li>
           <li>
             <a href="#about" className="nav-item">
-              Sobre
+              Habilidades
             </a>
           </li>
           <li>
