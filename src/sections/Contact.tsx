@@ -91,8 +91,9 @@ export const ContactSection = () => {
               <div className="mt-4 grid grid-cols-2 gap-2 ">
                 <CheckBox name="uxdesigner" label="Ux Designer" />
                 <CheckBox name="uidesigner" label="UI Designer" />
-                <CheckBox name="webdesigner" label="Web Designer" />
-                <CheckBox name="Idvisual" label="ID Visual" />
+                <CheckBox name="frontend" label="Dev Frontend" />
+                <CheckBox name="idvisual" label="ID Visual" />
+                <CheckBox name="landingpage" label="Landing Page" />
                 <CheckBox name="socialmidia" label="Social Midia" />
               </div>
             </div>
