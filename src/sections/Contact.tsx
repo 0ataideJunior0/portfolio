@@ -28,7 +28,7 @@ export const ContactSection = () => {
     }
   };
   return (
-    <div className="container py-48" id="contact">
+    <div className="container lg:py-48 sm:py-8" id="contact">
       <section className="lg:flex lg:flex-row justify-evenly sm:flex-col">
         {/* left content */}
         <div className="flex flex-col sm:justify-center items-center">
@@ -88,6 +88,10 @@ export const ContactSection = () => {
                 required
               />
               {/* checkbox */}
+
+              <span className="flex justify-center text-whiteP text-xl">
+                Como posso te ajudar?
+              </span>
               <div className="mt-4 grid grid-cols-2 gap-2 ">
                 <CheckBox name="uxdesigner" label="Ux Designer" />
                 <CheckBox name="uidesigner" label="UI Designer" />

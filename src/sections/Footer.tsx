@@ -4,7 +4,7 @@ import logo from "../assets/images/logo.png";
 
 export const FooterSection = () => {
   return (
-    <div className="container ">
+    <div className="container">
       <section className="flex sm:flex-col lg:flex-row lg:gap-8 justify-center dm:gap-8 py-4 items-center">
         <div
           className="
