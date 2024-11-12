@@ -59,7 +59,7 @@ export const HeroSection = () => {
           md:flex md:justify-center md:items-center
           sm:flex sm:justify-center"
           >
-            <Socials />
+            <Socials>Diga um Olá:</Socials>
           </span>
           {/* buttons  */}
           <div
