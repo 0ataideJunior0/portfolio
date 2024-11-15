@@ -11,7 +11,7 @@ export const CtaButton = ({ children, href }: Props) => {
     <a
       className="group rounded-xl relative inline-block overflow-hidden border
        border-primary600
-       px-8 py-3 focus:outline-none focus:ring"
+       px-8 py-3 focus:outline-none focus:ring cursor-pointer"
       href={href}
     >
       <span
