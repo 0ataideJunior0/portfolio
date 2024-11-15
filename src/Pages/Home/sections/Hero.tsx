@@ -1,13 +1,13 @@
 import { CvButton } from "@/components/CvButton";
 import Image from "next/image";
 
+import profilePhoto from "@/assets/images/profile_alta.png";
 import { CtaButton } from "@/components/CtaButton";
 import { ProfilePhoto } from "@/components/ProfilePhoto";
 import { Socials } from "@/components/Socials";
 import { TypeWriter } from "@/components/Typewriter";
 import Meteors from "@/components/ui/meteors";
 import Particles from "@/components/ui/particles";
-import profilePhoto from "../assets/images/profile_alta.png";
 
 export const HeroSection = () => {
   return (

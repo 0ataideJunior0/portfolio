@@ -1,7 +1,7 @@
 "use client";
+import profilePhoto from "@/assets/images/profile_alta.png";
 import CheckBox from "@/components/CheckBox";
 import Image from "next/image";
-import profilePhoto from "../assets/images/profile_alta.png";
 
 export const ContactSection = () => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any

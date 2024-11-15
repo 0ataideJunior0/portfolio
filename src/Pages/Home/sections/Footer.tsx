@@ -1,6 +1,6 @@
+import logo from "@/assets/images/logo.png";
 import { Socials } from "@/components/Socials";
 import Image from "next/image";
-import logo from "../assets/images/logo.png";
 
 export const FooterSection = () => {
   return (

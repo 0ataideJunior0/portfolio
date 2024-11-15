@@ -1,82 +1,41 @@
 import calendra from "@/assets/images/calendra_caba_dribble.png";
 import maid from "@/assets/images/maiddashboard.png";
 import { CtaButton } from "@/components/CtaButton";
-import Image from "next/image";
 import {
-  IoBulbOutline,
-  IoCodeSlash,
-  IoFingerPrint,
-  IoPlanetOutline,
-} from "react-icons/io5";
+  CustomCard,
+  FrontEndCard,
+  SmidCard,
+  UiCard,
+  UxCard,
+} from "@/components/skillsUI/SkillCards";
+import Image, { StaticImageData } from "next/image";
+
+interface ICardData {
+  title: string;
+  img: StaticImageData;
+  desc: string;
+  href: string;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  skills: (({ textSize }: CustomCard) => JSX.Element)[];
+}
 
 export const WorksSection = () => {
-  const CardWorks = [
+  const CardWorks: ICardData[] = [
     {
       title: "Calendra",
       img: calendra,
       desc: "Precisa de ajuda para organizar o seus serviços? Com o Calendra, você tem uma gama de opções para ofertar seus serviços e uma agenda inteligente que centraliza seus compromissos, tarefas e lembretes, tudo em um só lugar.",
-      skills: {
-        ux: {
-          title: "UX Designer",
-          icon: <IoFingerPrint />,
-        },
-        ui: {
-          title: "UI Designer",
-          icon: <IoPlanetOutline />,
-        },
-        Smid: {
-          title: "Social Midia",
-          icon: <IoBulbOutline />,
-        },
-        Wdes: {
-          title: "Web Designer",
-          icon: <IoCodeSlash />,
-        },
-      },
+      skills: [UiCard, UxCard, SmidCard],
+      href: "/calendra",
     },
     {
       title: "Polys Maid",
       img: maid,
       desc: "Gestor de equipe com agendamentos para cada time e funcionário. É um SaaS para gestão de equipes para empregadas domésticas.",
-      skills: {
-        ux: {
-          title: "UX Designer",
-          icon: <IoFingerPrint />,
-        },
-        ui: {
-          title: "UI Designer",
-          icon: <IoPlanetOutline />,
-        },
-        Smid: {
-          title: "Social Midia",
-          icon: <IoBulbOutline />,
-        },
-        Wdes: {
-          title: "Web Designer",
-          icon: <IoCodeSlash />,
-        },
-      },
+      skills: [UiCard, UxCard, FrontEndCard],
+      href: "/maid",
     },
   ];
-
-  /*   const skills = [{
-    ux: {
-      title: "UX Designer",
-      icon: <IoFingerPrint />,
-    },
-    ui: {
-      title: "UI Designer",
-      icon: <IoPlanetOutline />,
-    },
-    Smid: {
-      title: "Social Midia",
-      icon: <IoBulbOutline />,
-    },
-    Wdes: {
-      title: "Web Designer",
-      icon: <IoCodeSlash />,
-    },
-  }] */
 
   return (
     <div className="container" id="works">
@@ -114,21 +73,12 @@ export const WorksSection = () => {
                 Minhas funções no projeto:
               </span>
               <div className="flex gap-2 justify-evenly mt-3">
-                <div className="text-whiteP flex flex-col items-center gap-2 lg:text-xl sm:text-base">
-                  {item.skills?.ux.icon}
-                  {item.skills?.ux.title}
-                </div>
-                <div className="text-whiteP flex flex-col items-center gap-2 lg:text-xl sm:text-base">
-                  {item.skills?.ui.icon}
-                  {item.skills?.ui.title}
-                </div>
-                <div className="text-whiteP flex flex-col items-center gap-2 lg:text-xl sm:text-base">
-                  {item.skills?.Smid.icon}
-                  {item.skills?.Smid.title}
-                </div>
+                {item.skills.map((Skill, i) => (
+                  <Skill key={i} textSize="sm" />
+                ))}
               </div>
               <div className="flex w-full justify-center mt-4">
-                <CtaButton>Veja com mais detalhes</CtaButton>
+                <CtaButton href={item.href}>Veja com mais detalhes</CtaButton>
               </div>
             </div>
           </div>
