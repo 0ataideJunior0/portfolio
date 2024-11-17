@@ -28,6 +28,7 @@ export const Socials = ({ children }: props) => {
         <Link
           href="https://dribbble.com/Ataide_Jr"
           className="hover:text-primary hover:scale-125 transition-all duration-200"
+          target="_blank"
         >
           <TbBrandDribbble />
         </Link>
@@ -35,6 +36,7 @@ export const Socials = ({ children }: props) => {
         <Link
           href={"#"}
           className="hover:text-primary hover:scale-125 transition-all duration-200"
+          target="_blank"
         >
           <TbBrandBehance />
         </Link>
