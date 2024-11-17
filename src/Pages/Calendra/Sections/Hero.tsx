@@ -18,18 +18,19 @@ export const HeroSection = () => {
           <div className="flex flex-col gap-2">
             <span className="text-whiteP text-3xl">Panorama do Projeto</span>
             <span className="text-whiteS text-2xl">
-              o Calendra é um aplicativo para gestão de serviços e agendas, que
-              visa a simplicidade de agendamentos e serviços mas ao mesmo tempo
-              traz uma imensidão de características únicas no mercado.
+              Já imaginou um aplicativo para os autônomos se organizarem e
+              aumentarem seus lucros? A Calendra nasceu para trazer organização
+              e funcionalidades que melhoram o dia a dia de trabalho de
+              nutricionistas, médicos, cabeleireiros e outros profissionais.
             </span>
           </div>
           <div className="flex flex-col gap-2">
             <span className="text-whiteP text-3xl">Onde eu entro.</span>
             <span className=" text-whiteS text-2xl">
-              Quando fui chamado para o projeto, ele estava em estagio inicial,
+              Quando fui chamado para o projeto, ele estava em estágio inicial,
               a marca e padrões de cores ja haviam sidos estabelecidas
-              previamente. Desde então toda direção de ui e ux foram tomadas por
-              mim!
+              previamente. Desde então, toda direção de UI e UX foram tomadas
+              por mim!
             </span>
           </div>
         </div>

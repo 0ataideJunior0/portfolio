@@ -24,7 +24,7 @@ export const WorksSection = () => {
     {
       title: "Calendra",
       img: calendra,
-      desc: "Precisa de ajuda para organizar o seus serviços? Com o Calendra, você tem uma gama de opções para ofertar seus serviços e uma agenda inteligente que centraliza seus compromissos, tarefas e lembretes, tudo em um só lugar.",
+      desc: "Precisa de ajuda para organizar os seus serviços? Com o Calendra, você tem uma gama de opções para ofertar seus serviços e uma agenda inteligente que centraliza seus compromissos, tarefas e lembretes, tudo em um só lugar. ",
       skills: [UiCard, UxCard, SmidCard],
       href: "/calendra",
     },

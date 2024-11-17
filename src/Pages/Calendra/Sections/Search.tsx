@@ -25,13 +25,14 @@ export const SearchSection = () => {
         <div className="grid grid-cols-2 items-center mt-8">
           <span className="text-whiteP text-3xl">Entrevista com usuários:</span>
           <span className=" text-whiteS text-2xl">
-            Nesta etapa foram feitas varias perguntas a prestadores de serviços,
+            Nesta etapa foram feitas várias perguntas a prestadores de serviços,
             como exemplo: <br />
-            Como você organiza seus horários ? <br />
-            Onde você divulga seus serviços ?<br />
-            Atende sozinho ou com mais colaboradores ?<br /> Qual o seu maior
-            problema com agendas ?<br /> Como você gostaria que fosse uma agenda
-            perfeita?
+            Como você organiza seus horários? <br />
+            Onde você divulga seus serviços?
+            <br />
+            Atende sozinho ou com mais colaboradores?
+            <br /> Qual o seu maior problema com agendas?
+            <br /> Como você gostaria que fosse uma agenda perfeita?
           </span>
         </div>
       </div>

@@ -17,7 +17,7 @@ export const DefinitionSection = () => {
           <span className=" text-whiteS text-2xl">
             Após coletar os dados das pesquisas com uma amostragem em diferentes
             cidades e com diferentes públicos. Chegamos a primeira idealização
-            do projeto que viria a se tornas uma aplicativo.
+            do projeto que viria a se tornas um aplicativo.
           </span>
         </div>
         <div className="grid grid-cols-2 items-center mt-8">
