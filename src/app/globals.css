@@ -12,7 +12,7 @@
 }
 html,
 body {
-  @apply bg-gradient-to-t from-gray-800 to-zinc-800;
+  @apply bg-gradient-to-t from-zinc-800 to-gray-800;
   scroll-behavior: smooth;
   scrollbar-color: var(--color-primary);
 }

@@ -1,12 +1,13 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
+import { GrTechnology } from "react-icons/gr";
 import { IoMenu } from "react-icons/io5";
-import { RxPaperPlane, RxPerson } from "react-icons/rx";
+import { RxPaperPlane } from "react-icons/rx";
 import { TbHome, TbScreenShare } from "react-icons/tb";
 
-import logo from "../assets/images/logo.png";
-import logoName from "../assets/images/logoName.svg";
+import logo from "@/assets/images/logo.png";
+import logoName from "@/assets/images/logoName.svg";
 
 export const HeaderNavSection = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,10 +19,10 @@ export const HeaderNavSection = () => {
   return (
     <nav
       className="fixed  top-1 w-full z-30 shadow-md
-      backdrop-blur-md "
+      backdrop-blur-md"
     >
       <div
-        className="flex items-center justify-between 
+        className="flex items-center lg:justify-evenly sm:justify-between
         my-2 p-2 mx-4 "
       >
         {/* logos */}
@@ -52,8 +53,8 @@ export const HeaderNavSection = () => {
           </li>
           <li>
             <a href="#about" className="nav-item gap-1 flex items-center">
-              Sobre
-              <RxPerson />
+              Habilidades
+              <GrTechnology />
             </a>
           </li>
           <li>
@@ -80,7 +81,7 @@ export const HeaderNavSection = () => {
           </li>
           <li>
             <a href="#about" className="nav-item">
-              Sobre
+              Habilidades
             </a>
           </li>
           <li>

@@ -1,7 +1,7 @@
 "use client";
+import profilePhoto from "@/assets/images/profile_alta.png";
 import CheckBox from "@/components/CheckBox";
 import Image from "next/image";
-import profilePhoto from "../assets/images/profile_alta.png";
 
 export const ContactSection = () => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -28,7 +28,7 @@ export const ContactSection = () => {
     }
   };
   return (
-    <div className="container py-48" id="contact">
+    <div className="container lg:py-48 sm:py-8" id="contact">
       <section className="lg:flex lg:flex-row justify-evenly sm:flex-col">
         {/* left content */}
         <div className="flex flex-col sm:justify-center items-center">
@@ -88,11 +88,16 @@ export const ContactSection = () => {
                 required
               />
               {/* checkbox */}
+
+              <span className="flex justify-center text-whiteP text-xl">
+                Como posso te ajudar?
+              </span>
               <div className="mt-4 grid grid-cols-2 gap-2 ">
                 <CheckBox name="uxdesigner" label="Ux Designer" />
                 <CheckBox name="uidesigner" label="UI Designer" />
-                <CheckBox name="webdesigner" label="Web Designer" />
-                <CheckBox name="Idvisual" label="ID Visual" />
+                <CheckBox name="frontend" label="Dev Frontend" />
+                <CheckBox name="idvisual" label="ID Visual" />
+                <CheckBox name="landingpage" label="Landing Page" />
                 <CheckBox name="socialmidia" label="Social Midia" />
               </div>
             </div>
