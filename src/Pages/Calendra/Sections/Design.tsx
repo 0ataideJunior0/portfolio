@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import CalendraApresentation from "@/assets/images/calendra_apresentação.png";
 import DesignSystem from "@/assets/images/calenra_Dsystem_dribble.png";
-import FluxoGrama from "@/assets/images/fluxograma_calendra.png";
+import FluxoGrama from "@/assets/images/fluxograma2_calendra.png";
 import WireFrame from "@/assets/images/wireframe.png";
 
 export const DesignSection = () => {
@@ -19,11 +19,8 @@ export const DesignSection = () => {
       </div>
       <div>
         <div className="flex flex-col justify-center items-center">
-          <span className="flex text-whiteP text-4xl justify-center mt-4">
-            Fluxograma do app:
-          </span>
-          <Image src={FluxoGrama} alt="fluxograma_calendra" />
-          <span className="flex text-whiteP text-4xl justify-center mb-4">
+          <Image src={FluxoGrama} alt="fluxograma_calendra" className="mt-6" />
+          <span className="flex text-whiteP text-4xl justify-center mt-6">
             Alguns Wireframes:
           </span>
           <Image src={WireFrame} alt="wireframe" />
