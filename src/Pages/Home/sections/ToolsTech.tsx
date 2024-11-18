@@ -54,8 +54,8 @@ export const ToolsTechSection = () => {
     },
   ];
   return (
-    <div className="container py-20" id="about">
-      <span className="flex text-2xl justify-center mb-4 py-6 text-whiteP ">
+    <div className="container py-20 sm:py-4" id="about">
+      <span className="flex text-2xl text-center justify-center mb-4 py-6 text-whiteP ">
         Conheça algumas ferramentas que eu domino!!!
       </span>
       <section

@@ -24,7 +24,7 @@ export const WorksSection = () => {
     {
       title: "Calendra",
       img: calendra,
-      desc: "Precisa de ajuda para organizar o seus serviços? Com o Calendra, você tem uma gama de opções para ofertar seus serviços e uma agenda inteligente que centraliza seus compromissos, tarefas e lembretes, tudo em um só lugar.",
+      desc: "Precisa de ajuda para organizar os seus serviços? Com o Calendra, você tem uma gama de opções para ofertar seus serviços e uma agenda inteligente que centraliza seus compromissos, tarefas e lembretes, tudo em um só lugar. ",
       skills: [UiCard, UxCard, SmidCard],
       href: "/calendra",
     },
@@ -40,7 +40,7 @@ export const WorksSection = () => {
   return (
     <div className="container" id="works">
       {/* Header */}
-      <div className="flex flex-col items-center py-10 my-8">
+      <div className="flex flex-col items-center py-10">
         <span className="text-4xl text-whiteP ">Meus trabalhos</span>
         <span className="text-2xl text-whiteS ">
           Dê uma espiada nos trabalhos realizados recentes!
@@ -57,7 +57,7 @@ export const WorksSection = () => {
             className="flex flex-col items-center border  
          border-gray-200 rounded-3xl shadow-2xl lg:flex-row md:max-w-xl lg:max-w-4xl bg-slate-800
          lg:px-5
-          overflow-hidden sticky top-20"
+          overflow-hidden sticky top-20 sm:top-10"
           >
             <div className="h-full">
               <Image src={item.img} alt="imagem" className="rounded-md" />
@@ -66,10 +66,10 @@ export const WorksSection = () => {
               <div className="lg:text-5xl md:text-4xl sm:text-3xl text-whiteP flex justify-center">
                 {item.title}
               </div>
-              <div className="lg:text-xl text-whiteS lg:min-w-[400px] md:min-w-[300px] lg:min-h-[200px]">
+              <div className="sm:hidden lg:flex lg:text-xl text-whiteS lg:min-w-[400px] md:min-w-[300px] lg:min-h-[200px]">
                 {item.desc}
               </div>
-              <span className="text-2xl text-whiteP flex justify-center">
+              <span className="sm:text-xl md:text-2xl text-whiteP flex justify-center">
                 Minhas funções no projeto:
               </span>
               <div className="flex gap-2 justify-evenly mt-3">
