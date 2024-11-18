@@ -51,16 +51,17 @@ export const HeaderNavSection = () => {
               <TbHome />
             </a>
           </li>
-          <li>
-            <a href="#about" className="nav-item gap-1 flex items-center">
-              Habilidades
-              <GrTechnology />
-            </a>
-          </li>
+
           <li>
             <a href="#works" className="nav-item gap-1 flex items-center">
               Trabalhos
               <TbScreenShare />
+            </a>
+          </li>
+          <li>
+            <a href="#about" className="nav-item gap-1 flex items-center">
+              Habilidades
+              <GrTechnology />
             </a>
           </li>
           <li>
@@ -80,13 +81,13 @@ export const HeaderNavSection = () => {
             </a>
           </li>
           <li>
-            <a href="#about" className="nav-item">
-              Habilidades
+            <a href="#works" className="nav-item">
+              Trabalhos
             </a>
           </li>
           <li>
-            <a href="#works" className="nav-item">
-              Trabalhos
+            <a href="#about" className="nav-item">
+              Habilidades
             </a>
           </li>
           <li>

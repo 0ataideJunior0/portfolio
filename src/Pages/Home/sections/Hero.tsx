@@ -12,7 +12,7 @@ import Particles from "@/components/ui/particles";
 export const HeroSection = () => {
   return (
     <div
-      className="h-dvh py-28 md:py-32 lg:py-64 relative z-0 flex items-start sm:flex-col overflow-hidden"
+      className="h-dvh py-28 md:py-20 lg:py-64 relative z-0 flex items-start sm:flex-col overflow-hidden"
       id="hero"
     >
       {/* bg image */}

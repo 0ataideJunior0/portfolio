@@ -55,14 +55,7 @@ export const ContactSection = () => {
               Entre em contato
             </h2>
             <div className="flex flex-col md:text-2xl sm:text-xl  text-whiteP gap-2 mb-4">
-              <label
-                className="
-              sm:justify-center sm:flex
-              md:flex md:justify-start
-              "
-              >
-                Nome
-              </label>
+              <label className="flex justify-start">Nome</label>
               <input
                 name="nome"
                 type="text"
@@ -72,14 +65,7 @@ export const ContactSection = () => {
               />
             </div>
             <div className="flex flex-col md:text-2xl sm:text-xl text-whiteP gap-2 mb-4">
-              <label
-                className="
-              sm:justify-center sm:flex
-              md:flex md:justify-start
-              "
-              >
-                Email
-              </label>
+              <label className="flex justify-start">Email</label>
               <input
                 name="email"
                 type="email"
@@ -102,14 +88,7 @@ export const ContactSection = () => {
               </div>
             </div>
             <div className="flex flex-col text-2xl text-whiteP gap-2 mb-4">
-              <label
-                className="
-              sm:justify-center sm:flex
-              md:flex md:justify-start
-              "
-              >
-                Mensagem
-              </label>
+              <label className="flex justify-start">Mensagem</label>
               <textarea
                 name="mensagem"
                 className="flex rounded-md px-2 text-slate-600 items-start min-h-[200px] text-xl"
