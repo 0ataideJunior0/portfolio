@@ -7,6 +7,7 @@ import miro from "@/assets/icons/miro.svg";
 import react from "@/assets/icons/react.svg";
 import tailwind from "@/assets/icons/tailwindcss.svg";
 import typescrip from "@/assets/icons/typescript.svg";
+import { motion } from "motion/react";
 
 import Image from "next/image";
 
@@ -63,10 +64,19 @@ export const ToolsTechSection = () => {
       lg:grid-cols-[repeat(auto-fill,_minmax(400px,1fr))]"
       >
         {CardList.map((item, index) => (
-          <div
+          <motion.div
+            drag
+            dragElastic={0.4}
+            dragSnapToOrigin={true}
+            whileDrag={{
+              scale: 1.2,
+              background: "rgba(21, 23, 59, 0.6)",
+              boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
+              backdropFilter: "blur(4.2px)",
+            }}
             key={index}
             className="flex  border-2 rounded-md gap-2 py-1 px-1 items-center
-              hover:border-2 hover:border-primary"
+              hover:border-2 hover:border-primary cursor-grab"
           >
             <span className=" flex bg-slate-800 h-[64px] w-[64px] justify-center items-center rounded-md">
               <Image src={item.img} alt={item.title} width={50} height={50} />
@@ -75,7 +85,7 @@ export const ToolsTechSection = () => {
               <span className="text-3xl text-whiteP">{item.title}</span>
               <span className="text-whiteS">{item.desc}</span>
             </div>
-          </div>
+          </motion.div>
         ))}
       </section>
     </div>
