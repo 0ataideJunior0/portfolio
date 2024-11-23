@@ -2,6 +2,7 @@
 import profilePhoto from "@/assets/images/profile_alta.png";
 import CheckBox from "@/components/CheckBox";
 import Image from "next/image";
+import Swal from "sweetalert2";
 
 export const ContactSection = () => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -24,7 +25,11 @@ export const ContactSection = () => {
     }).then((res) => res.json());
 
     if (res.success) {
-      console.log("Success", res);
+      Swal.fire({
+        title: "Ótimo trabalho",
+        text: "Sua mensagem foi enviada com sucesso!",
+        icon: "success",
+      });
     }
   };
   return (
