@@ -29,7 +29,7 @@ export const FooterSection = () => {
           <Socials />
         </div>
       </section>
-      <div className="flex justify-center text-xl text-whiteP mb-4">
+      <div className="flex justify-center text-base lg:text-xl text-whiteP mb-4">
         <span>@2024 Todos os direitos reservados</span>
       </div>
     </div>
