@@ -23,6 +23,7 @@ export const Socials = ({ children }: props) => {
           target="_blank"
         >
           <TbBrandLinkedin />
+          <span className="sr-only">linkedin icon</span>
         </Link>
 
         <Link
@@ -30,6 +31,7 @@ export const Socials = ({ children }: props) => {
           className="hover:text-primary hover:scale-125 transition-all duration-200"
           target="_blank"
         >
+          <span className="sr-only">Dribbble icon</span>
           <TbBrandDribbble />
         </Link>
 
@@ -39,6 +41,7 @@ export const Socials = ({ children }: props) => {
           target="_blank"
         >
           <TbBrandBehance />
+          <span className="sr-only">Behance icon</span>
         </Link>
       </span>
     </div>
